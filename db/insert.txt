@@ -1,0 +1,28 @@
+SELECT * FROM caphe;
+SELECT * FROM tra;
+SELECT * FROM banhmi;
+
+---insert Cà Phê 
+INSERT INTO caphe(ten, gia)
+VALUES 
+('Cà Phê Sữa',25000 ),
+('Cà Phê Đên',20000 ),
+('Bạc Xỉu Đá',25000)
+RETURNING *;;
+
+---insert Trà
+INSERT INTO tra(ten, gia)
+VALUES 
+('Trà Sen Vàng',25000 ),
+('Trà Thạch Đào',20000 ),
+('Trà Thanh Đào',25000),
+('Trà Thạch Vãi',30000)
+RETURNING *;
+
+---insert Bánh Mình
+INSERT INTO banhmi(ten, gia)
+VALUES 
+('Thịt Nướng',17000 ),
+('Xíu Mại',15000 ),
+('Chả Lụa',15000)
+RETURNING *;

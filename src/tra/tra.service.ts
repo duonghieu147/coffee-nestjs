@@ -25,7 +25,7 @@ export class TraService {
       }
     
       async update(tra: tra): Promise<UpdateResult> {
-        return await this.traRepo.update(tra.tra_id, tra);
+        return await this.traRepo.update(tra.id, tra);
       }
     
       async delete(id): Promise<DeleteResult> {

@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CapheModule } from './caphe/caphe.module';
 import { TraModule } from './tra/tra.module';
 import { BanhmiModule } from './banhmi/banhmi.module';
+import { MerchandiseModule } from './merchandise/merchandise.module';
 
 
 @Module({
@@ -22,6 +23,7 @@ import { BanhmiModule } from './banhmi/banhmi.module';
     CapheModule,
     TraModule,
     BanhmiModule,
+    MerchandiseModule,
 ],
   controllers: [AppController],
   providers: [AppService],

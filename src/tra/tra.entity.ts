@@ -5,11 +5,19 @@ export class TraEntity {}
 @Entity()
 export class tra{
   @PrimaryGeneratedColumn()
-  tra_id: number;
+  id: number;
 
   @Column({ length: 255 }) 
   ten: string;
 
   @Column()
   gia: number;
+
+  @Column()
+  mota: string;
+
+  @Column()
+  url:string;
+
+
 }

@@ -25,7 +25,7 @@ export class CapheService {
       }
     
       async update(caphe: caphe): Promise<UpdateResult> {
-        return await this.capheRepo.update(caphe.caphe_id, caphe);
+        return await this.capheRepo.update(caphe.id, caphe);
       }
     
       async delete(id): Promise<DeleteResult> {

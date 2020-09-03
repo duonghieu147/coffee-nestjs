@@ -1,9 +1,10 @@
+
 import { Entity, Column,PrimaryGeneratedColumn } from "typeorm";
 
-export class CapheEntity {}
+export class MerchandiseEntity {}
 
 @Entity()
-export class caphe{
+export class merchandise{
   @PrimaryGeneratedColumn()
   id: number;
 
